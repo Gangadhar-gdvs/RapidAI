@@ -50,6 +50,7 @@
         ]
       }
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWC57W0X4V"></script>
@@ -464,7 +465,7 @@
                       <div>
                         <img src="images/icon-quote.svg" alt="Quote"  />
                         <p class="ek ik xj _p kc fb">
-                          "Working as a team, we significantly improved the online presence of JNTUACEP College, ensuring it reflects the college's values and provides a seamless experience for students, faculty, and visitors.”
+                          "Thanks to the efforts of this team, we have seen a remarkable improvement in the online presence of JNTUACEP College. Their work effectively reflects the core values of the college while providing a seamless experience for students, faculty, and visitors alike. The attention to detail and dedication shown in this project have been truly commendable."
                         </p>
 
                         <div class="tc yf vf">
@@ -492,7 +493,7 @@
                       <div>
                         <img src="images/icon-quote.svg" alt="Quote"  />
                         <p class="ek ik xj _p kc fb">
-                          "Currently working as a team, we are enhancing the online presence of Comfort Floors and Bathrooms Limited, focusing on creating a website that reflects the company’s dedication to quality and provides an intuitive, seamless experience for customers throughout Ireland."
+                          "The team has been instrumental in enhancing the online presence of Comfort Floors and Bathrooms Limited. Their work focuses on creating a website that not only reflects our commitment to quality but also provides an intuitive and seamless experience for our customers across Ireland. We are extremely pleased with their professionalism and the results they have delivered."
                         </p>
 
                         <div class="tc yf vf">
@@ -546,7 +547,100 @@
       <!-- ===== Counter End ===== -->
 
       <!-- ===== Clients Start ===== -->
-      
+    
+    <div>
+
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-500">Our Partners</h2>
+            
+            <!-- Carousel Wrapper -->
+            <div class="relative">
+                <!-- Carousel Track -->
+                <div class="carousel-wrapper">
+                    <div class="carousel-content">
+                        <!-- Partner Image 1 -->
+                        <div class=" carousel-item m-4 ">
+                            <img src="/images/KMC.jpg" alt="Partner 1" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <!-- Partner Image 2 -->
+                        <div class="bg-white rounded-[10px] carousel-item m-4">
+                            <img src="/images/SRIYAS PROJECT.png" alt="Partner 2" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <!-- Partner Image 3 -->
+                        <div class=" carousel-item m-4">
+                            <img src="/images/GenIT.jpg" alt="Partner 3" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <!-- Partner Image 4 -->
+                        <!-- <div class="carousel-item px-2">
+                            <img src="https://via.placeholder.com/150" alt="Partner 4" class="w-full rounded-lg shadow-lg">
+                        </div> -->
+                        <!-- Partner Image 5 -->
+                        <!-- <div class="carousel-item px-2">
+                            <img src="https://via.placeholder.com/150" alt="Partner 5" class="w-full rounded-lg shadow-lg">
+                        </div> -->
+                        <!-- Duplicate Images for Continuous Looping -->
+                        <div class=" carousel-item m-4">
+                            <img src="/images/KMC.jpg" alt="Partner 1" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <div class="bg-white rounded-[10px] carousel-item m-4">
+                            <img src="/images/SRIYAS PROJECT.png" alt="Partner 2" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <div class=" carousel-item m-4">
+                            <img src="/images/GenIT.jpg" alt="Partner 3" class="w-full h-[120px] rounded-lg shadow-lg">
+                        </div>
+                        <!-- <div class="carousel-item px-2">
+                            <img src="https://via.placeholder.com/150" alt="Partner 4" class="w-full rounded-lg shadow-lg">
+                        </div>
+                        <div class="carousel-item px-2">
+                            <img src="https://via.placeholder.com/150" alt="Partner 5" class="w-full rounded-lg shadow-lg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    </div>
+    
+    <script>
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const carouselContent = document.querySelector('.carousel-content');
+      let slideIndex = 0;
+
+      const slideWidth = document.querySelector('.carousel-item').offsetWidth;
+      const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+      // Update the slide position
+      function updateSlidePosition() {
+          carouselContent.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+      }
+
+      // Previous button click
+      prevBtn.addEventListener('click', () => {
+          if (slideIndex > 0) {
+              slideIndex--;
+          } else {
+              slideIndex = totalSlides - 1;
+          }
+          updateSlidePosition();
+      });
+
+      // Next button click
+      nextBtn.addEventListener('click', () => {
+          if (slideIndex < totalSlides - 1) {
+              slideIndex++;
+          } else {
+              slideIndex = 0;
+          }
+          updateSlidePosition();
+      });
+  </script>
+
       <!-- ===== Clients End ===== -->
 
       <!-- ===== Blog Start ===== -->

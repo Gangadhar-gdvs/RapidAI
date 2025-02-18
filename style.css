@@ -158,6 +158,48 @@ h6 {
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* Adjust for different screen sizes */
+@media (min-width: 640px) {
+  .carousel-item {
+      width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+      width: 33.3333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+      width: 20%;
+  }
+}
 
 a {
   color: inherit;
