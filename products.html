@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Title: Include relevant keywords -->
-    <title>RapidAI Services - AI, Web, UI/UX, and Digital Marketing Solutions</title>
+    <title>RapidAI Products - Innovative Healthcare Solutions</title>
   
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
   
     <!-- Meta Description -->
-    <meta name="description" content="Discover RapidAI's innovative services in AI development, web solutions, UI/UX design, and digital marketing, tailored to drive business success with client testimonials." />
+    <meta name="description" content="Explore RapidAI's innovative healthcare products, including SmartQMS AI Suite, AI Calling Agent, and MediBill, designed to enhance efficiency and patient care." />
   
     <!-- Meta Keywords -->
-    <meta name="keywords" content="RapidAI Services, AI development, web solutions, UI/UX design, digital marketing, client projects, digital innovation, business transformation" />
+    <meta name="keywords" content="RapidAI Products, SmartQMS AI Suite, AI Calling Agent, MediBill, healthcare solutions, patient management, pharmacy billing, AI automation" />
   
     <!-- Meta Author -->
     <meta name="author" content="RapidAI Team" />
   
     <!-- Open Graph Tags for Social Sharing -->
-    <meta property="og:title" content="RapidAI Services - AI, Web, UI/UX, and Digital Marketing Solutions" />
-    <meta property="og:description" content="Discover RapidAI's innovative services in AI development, web solutions, UI/UX design, and digital marketing, tailored to drive business success with client testimonials." />
+    <meta property="og:title" content="RapidAI Products - Innovative Healthcare Solutions" />
+    <meta property="og:description" content="Explore RapidAI's innovative healthcare products, including SmartQMS AI Suite, AI Calling Agent, and MediBill, designed to enhance efficiency and patient care." />
     <meta property="og:image" content="images/logo.png" />
-    <meta property="og:url" content="https://rapidai-services-and-solutions.in/services.html" />
+    <meta property="og:url" content="https://rapidai-services-and-solutions.in/products.html" />
     <meta property="og:type" content="website" />
   
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://rapidai-services-and-solutions.in/services.html" />
+    <link rel="canonical" href="https://rapidai-services-and-solutions.in/products.html" />
   
     <!-- External Stylesheets -->
     <link href="style.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
         "name": "RapidAI Services and Solutions",
         "url": "https://rapidai-services-and-solutions.in/",
         "logo": "https://rapidai-services-and-solutions.in/images/logo.png",
-        "description": "RapidAI delivers cutting-edge AI, web, UI/UX, and digital marketing solutions to transform businesses and enhance digital experiences.",
+        "description": "RapidAI offers innovative healthcare products like SmartQMS AI Suite, AI Calling Agent, and MediBill to streamline operations and enhance patient care.",
         "sameAs": [
           "https://www.linkedin.com/company/rapidai-solutions-and-services/"
         ]
@@ -88,30 +88,17 @@
         transform: rotate(0deg) scale(1);
         opacity: 1;
       }
-      .client-card {
+      .product-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-      .client-card:hover {
+      .product-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
-      .service-icon {
+      .product-icon {
         width: 150px;
         height: 150px;
         object-fit: cover;
-      }
-      .client-image {
-        width: 200px;
-        height: 200px;
-      }
-      .service-item {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-      }
-      .service-text {
-        flex: 1;
       }
       .hero-image {
         width: 300px;
@@ -124,6 +111,15 @@
         align-items: center;
         gap: 20px;
       }
+      @media (max-width: 768px) {
+        .hero-content {
+          flex-direction: column;
+        }
+        .hero-image {
+          width: 100%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -135,7 +131,7 @@
     gtag('config', 'G-VWC57W0X4V');
   </script>
   <body
-    x-data="{ page: 'services', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'products', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -178,7 +174,7 @@
           <nav>
             <ul class="tc _o sf yo cg ep">
               <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-              <li><a href="products.html" class="xl" :class="{ 'mk': page === 'product' }">Product</a></li>
+              <li><a href="products.html" class="xl" :class="{ 'mk': page === 'products' }">Products</a></li>
               <li><a href="services.html" class="xl" :class="{ 'mk': page === 'services' }">Services</a></li>
               <li><a href="index.html#support" class="xl">Support</a></li>
             </ul>
@@ -209,26 +205,25 @@
           <div class="tc _o">
             <div class="zoom-in hero-content">
               <div>
-                <h1 class="fk vj zp or kk wm wb home-font">Our Expert Services</h1>
+                <h1 class="fk vj zp or kk wm wb home-font">Our Innovative Products</h1>
                 <p class="fq">
-                  RapidAI empowers businesses with advanced AI solutions, stunning web designs, seamless UI/UX experiences, and impactful digital marketing, crafted to drive growth and innovation.
+                  Discover RapidAI's cutting-edge healthcare products designed to streamline operations, enhance patient care, and drive efficiency with AI-powered solutions.
                 </p>
                 <div class="tc tf yo zf mb">
-                  <a href="#contact" class="ek jk lk gh gi hi rg ml il vc _d _l">Start Your Journey</a>
+                  <a href="index.html#support" class="ek jk lk gh gi hi rg ml il vc _d _l">Explore Now</a>
                 </div>
               </div>
-              <img src="images/service-page.jpg" alt="Expert Services" style="width: 50%; height: auto;" />
-
+              <img src="images/product-innovative.jpg" alt="Healthcare Solutions" style="width: 50%; height: auto;" />
             </div>
           </div>
         </div>
       </section>
       <!-- ===== Hero End ===== -->
 
-      <!-- ===== Services Overview Start ===== -->
-      <section class="lj tp kr" id="services">
+      <!-- ===== Products Overview Start ===== -->
+      <section class="lj tp kr" id="products">
         <div
-          x-data="{ sectionTitle: `What We Offer`, sectionTitleText: `Our services are designed to deliver measurable results, combining technology and creativity to meet your unique business goals.`}"
+          x-data="{ sectionTitle: `Our Healthcare Solutions`, sectionTitleText: `Explore our intelligent products designed to transform healthcare operations and enhance patient experiences.`}"
         >
           <div class="zoom-in bb ze rj ki xn vq">
             <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
@@ -237,192 +232,177 @@
         </div>
 
         <div class="bb ze ki xn yq mb en">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Service Item 1 -->
-            <div class="slide-in-left service-item sg oi pi zq ml il am cn _m">
-              <img src="images/ai_innovation.jpg" alt="AI Innovation" class="service-icon" />
-              <div class="service-text">
-                <h4 class="ek zj kk wm nb _b">AI Innovation</h4>
-                <p>Develop intelligent systems with machine learning, predictive analytics, and automation to optimize operations and enhance decision-making.</p>
+          <!-- Product 1: SmartQMS AI Suite -->
+          <div class="slide-in-left product-card sg vk xm bi qj p-6 rounded-lg mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <img src="images/smartqms.jpg" alt="SmartQMS AI Suite" class="product-icon mx-auto w-64 h-auto" />
+              </div>
+              <div>
+                <h4 class="ek zj kk wm nb _b">SmartQMS AI Suite</h4>
+                <p class="ek ik xj _p kc fb">Streamline Patient Flow | Improve Operational Efficiency</p>
+                <p class="mb-4">SmartQMS is a smart, AI-enhanced Queue Management System built for hospitals and clinics. It helps manage patient flow effectively with real-time queue tracking, role-based dashboards, and administrative control for a smooth clinical experience.</p>
+                <h5 class="font-bold text-lg mb-2">Key Features:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Role-based access for Admin, Reception, Doctor</li>
+                  <li>Real-time queue and token management</li>
+                  <li>Department-level routing</li>
+                  <li>Performance tracking and reporting</li>
+                  <li>Scalable for multi-specialty and multi-location setups</li>
+                </ul>
+                <h5 class="font-bold text-lg mb-2">Benefits:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Shorter wait times and improved patient satisfaction</li>
+                  <li>Organized, transparent process across departments</li>
+                  <li>Centralized control with insightful data analytics</li>
+                </ul>
+                <div class="tc tf yo zf mb">
+                  <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l mr-4">Watch Demo</a>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Send Enquiry</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: AI Calling Agent -->
+          <div class="slide-in-left product-card sg vk xm bi qj p-6 rounded-lg mb-8" style="transition-delay: 0.2s;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+               <img src="images/ai_agent.jpg" alt="AI Calling Agent" class="product-icon mx-auto w-64 h-auto" />
+
+
+              </div>
+              <div>
+                <h4 class="ek zj kk wm nb _b">AI Calling Agent</h4>
+                <p class="ek ik xj _p kc fb">Automated Calling System | Personalized Patient Engagement</p>
+                <p class="mb-4">The AI Calling Agent automates outbound hospital calls for appointment reminders, test follow-ups, and real-time updates. It uses natural language processing to deliver human-like conversations in multiple languages.</p>
+                <h5 class="font-bold text-lg mb-2">Key Features:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Automated voice calls for reminders and follow-ups</li>
+                  <li>Multilingual support (e.g., English, Telugu, Hindi)</li>
+                  <li>Patient-specific message customization</li>
+                  <li>Easy integration with hospital PMS</li>
+                  <li>Configurable schedules and triggers</li>
+                </ul>
+                <h5 class="font-bold text-lg mb-2">Benefits:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Cuts down manual calling time</li>
+                  <li>Improves appointment adherence</li>
+                  <li>Ensures consistent, timely communication</li>
+                </ul>
+                <div class="tc tf yo zf mb">
+                  <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l mr-4">Watch Demo</a>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Send Enquiry</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: MediBill -->
+          <div class="slide-in-left product-card sg vk xm bi qj p-6 rounded-lg mb-8" style="transition-delay: 0.4s;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <img src="images/medibill.jpg" alt="MediBill" class="product-icon mx-auto w-64 h-auto" />
+              </div>
+              <div>
+                <h4 class="ek zj kk wm nb _b">MediBill</h4>
+                <p class="ek ik xj _p kc fb">Your Pharmacy’s Digital Assistant</p>
+                <p class="mb-4">Modern, cloud-based billing & inventory software for pharmacies and medical distributors.</p>
+                <h5 class="font-bold text-lg mb-2">Key Features:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Fast Billing System – Handle walk-ins & online orders with ease</li>
+                  <li>Inventory Management – Track stock, expiry, low-stock alerts</li>
+                  <li>Sales Reports – Daily, monthly, and GST reports in one click</li>
+                  <li>Cloud Backup – Never lose your data, stored securely in the cloud</li>
+                  <li>Multi-user Access – Staff & admin access with role controls</li>
+                  <li>Payment Gateway – Accept digital payments (optional)</li>
+                </ul>
+                <h5 class="font-bold text-lg mb-2">How It Works:</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li><strong>Sign Up:</strong> We onboard your shop with business details, GST, and inventory.</li>
+                  <li><strong>Cloud Setup:</strong> Your shop gets a private secure cloud account using Firebase.</li>
+                  <li><strong>Billing from Any Device:</strong> Login from phone or desktop to manage your shop.</li>
+                  <li><strong>Reports & Backup:</strong> Access daily sales, expiry alerts, and full history anytime.</li>
+                  <li><strong>Support Anytime:</strong> We assist you via WhatsApp or call for anything.</li>
+                </ul>
+                <h5 class="font-bold text-lg mb-2">Why Choose MediBill?</h5>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Affordable pricing for small and mid-size shops</li>
+                  <li>Runs on mobile or PC — no installation needed</li>
+                  <li>Data stored securely on Google Cloud (Firebase)</li>
+                  <li>Built by professionals, supported by real humans</li>
+                </ul>
+                <div class="tc tf yo zf mb">
+                  <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l mr-4">Watch Demo</a>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Book a Free Demo</a>
+                </div>
               </div>
             </div>
 
-            <!-- Service Item 2 -->
-            <div class="slide-in-left service-item sg oi pi zq ml il am cn _m" style="transition-delay: 0.2s;">
-              <img src="images/web-design.jpg" alt="Web Solutions" class="service-icon" />
-              <div class="service-text">
-                <h4 class="ek zj kk wm nb _b">Web Solutions</h4>
-                <p>Create fast, responsive, and scalable websites that align with your brand and deliver exceptional user experiences across devices.</p>
+            <!-- MediBill Pricing -->
+            <div class="mt-8">
+              <h5 class="font-bold text-lg mb-4">Plans & Pricing</h5>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rotate-in product-card sg vk xm bi qj p-6 rounded-lg">
+                  <h6 class="font-bold text-md mb-2">Basic</h6>
+                  <p><strong>Setup Fee:</strong> ₹2,499 (One-time)</p>
+                  <p><strong>Monthly Fee:</strong> ₹699</p>
+                  <p class="mb-4">Features: Billing, inventory, cloud backup</p>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Enquire Now</a>
+                </div>
+                <div class="rotate-in product-card sg vk xm bi qj p-6 rounded-lg" style="transition-delay: 0.2s;">
+                  <h6 class="font-bold text-md mb-2">Standard</h6>
+                  <p><strong>Setup Fee:</strong> ₹2,499 (One-time)</p>
+                  <p><strong>Monthly Fee:</strong> ₹999</p>
+                  <p class="mb-4">Features: Billing, inventory, cloud backup, reports, expiry alerts</p>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Enquire Now</a>
+                </div>
+                <div class="rotate-in product-card sg vk xm bi qj p-6 rounded-lg" style="transition-delay: 0.4s;">
+                  <h6 class="font-bold text-md mb-2">Premium</h6>
+                  <p><strong>Setup Fee:</strong> ₹2,999 (One-time)</p>
+                  <p><strong>Monthly Fee:</strong> ₹1,499</p>
+                  <p class="mb-4">Features: Billing, inventory, cloud backup, reports, expiry alerts, payment gateway, priority support</p>
+                  <a href="index.html#support" class="text-blue-600 hover:underline">Enquire Now</a>
+                </div>
               </div>
             </div>
 
-            <!-- Service Item 3 -->
-            <div class="slide-in-left service-item sg oi pi zq ml il am cn _m" style="transition-delay: 0.4s;">
-              <img src="images/ui-ux.jpg" alt="UI/UX Excellence" class="service-icon" />
-              <div class="service-text">
-                <h4 class="ek zj kk wm nb _b">UI/UX Excellence</h4>
-                <p>Design intuitive, user-focused interfaces that boost engagement and ensure seamless interactions for your audience.</p>
-              </div>
-            </div>
-
-            <!-- Service Item 4 -->
-            <div class="slide-in-left service-item sg oi pi zq ml il am cn _m" style="transition-delay: 0.6s;">
-              <img src="images/cloud-integration.jpg" alt="Cloud Integration" class="service-icon" />
-              <div class="service-text">
-                <h4 class="ek zj kk wm nb _b">Cloud Integration</h4>
-                <p>Leverage cloud technologies for secure, scalable, and efficient systems to support your business growth.</p>
-              </div>
-            </div>
-
-            <!-- Service Item 5 -->
-            <div class="slide-in-left service-item sg oi pi zq ml il am cn _m" style="transition-delay: 0.8s;">
-              <img src="images/digital-marketing.jpg" alt="Digital Marketing" class="service-icon" />
-              <div class="service-text">
-                <h4 class="ek zj kk wm nb _b">Digital Marketing</h4>
-                <p>Help businesses grow with tailored digital marketing strategies, including SEO, social media, and targeted campaigns to maximize reach and engagement.</p>
-              </div>
+            <!-- MediBill Enquiry Form -->
+            <div class="mt-8">
+              <h5 class="font-bold text-lg mb-4">Book a Free Demo or Enquire Now</h5>
+              <form id="medibillEnquiryForm" action="mailto:contact.rapidai@gmail.com" method="get" enctype="text/plain" class="fade-up">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div>
+                    <label class="rc ac" for="enquiryName">Name</label>
+                    <input type="text" name="enquiryName" id="enquiryName" placeholder="Enter Your Name" class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" required minlength="2" />
+                  </div>
+                  <div>
+                    <label class="rc ac" for="shopName">Shop Name</label>
+                    <input type="text" name="shopName" id="shopName" placeholder="Enter Shop Name" class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" required />
+                  </div>
+                  <div>
+                    <label class="rc ac" for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Enter Location" class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" required />
+                  </div>
+                  <div>
+                    <label class="rc ac" for="whatsappNumber">WhatsApp Number</label>
+                    <input type="tel" name="whatsappNumber" id="whatsappNumber" placeholder="+91 1234 567 890" class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" pattern="[+]{1}[0-9]{1,3}[ ]?[0-9 ]{6,14}" required />
+                  </div>
+                  <div>
+                    <label class="rc ac" for="billingPoints">Number of Billing Points</label>
+                    <input type="number" name="billingPoints" id="billingPoints" placeholder="Enter Number of Billing Points" class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" required />
+                  </div>
+                </div>
+                <div class="tc xf mt-4">
+                  <button type="submit" class="vc rg lk gh ml il hi gi _l">Submit Enquiry</button>
+                  <a href="https://wa.me/9390011520" class="ml-4 text-blue-600 hover:underline">WhatsApp Us</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Services Overview End ===== -->
-
-      <!-- ===== Client Projects Start ===== -->
-      <section class="hj rp hr" id="clients">
-        <div
-          x-data="{ sectionTitle: `Client Success Stories`, sectionTitleText: `Our projects have empowered businesses to achieve their goals. Discover how we’ve made a difference.`}"
-        >
-          <div class="zoom-in bb ze rj ki xn vq">
-            <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
-            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-          </div>
-        </div>
-
-        <div class="bb ze ki xn ar">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Client Project 1 -->
-            <div class="rotate-in client-card sg vk xm bi qj p-6 rounded-lg">
-              <img src="images/jntucep.png" alt="JNTUACEP" class="client-image mx-auto" />
-              <div class="text-center">
-                <h4 class="ek yj go kk wm xb"></h4>
-                <p class="ek ik xj _p kc fb">
-                We developed the official website for JNTUA College of Engineering, Pulivendula, delivering a modern, responsive, and user-friendly platform that streamlines access to academic information, enhances communication, and reflects the institution’s vision in the digital space.
-                </p>
-
-                <div class="tc yf vf flex justify-center items-center space-x-1 mb-4">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                </div>
-                <p class="ek ik xj kc fb italic">"RapidAI's revolutionized our Platform!"</p>
-                <a href="#" class="text-blue-600 hover:underline">Learn More</a>
-              </div>
-            </div>
-
-            <!-- Client Project 2 -->
-            <div class="rotate-in client-card sg vk xm bi qj p-6 rounded-lg" style="transition-delay: 0.2s;">
-              <img src="images/CFL.png" alt="Comfort Floors & Bathrooms" class="client-image mx-auto" />
-              <div class="text-center">
-                <p class="ek ik xj _p kc fb">
-                  We designed a modern e-commerce platform for Comfort Floors & Bathrooms, enhancing user experience and boosting online sales in Ireland.
-                </p>
-                <div class="tc yf vf flex justify-center items-center space-x-1 mb-4">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                </div>
-                <p class="ek ik xj kc fb italic">"The new website significantly increased our online visibility and sales."</p>
-                <a href="https://www.comfortfloors.ie/" target="_blank" class="text-blue-600 hover:underline">Visit Site</a>
-              </div>
-            </div>
-
-            <!-- Client Project 3 -->
-            <div class="rotate-in client-card sg vk xm bi qj p-6 rounded-lg" style="transition-delay: 0.4s;">
-              <img src="images/millet.png" alt="Millet Software Integration" class="client-image mx-auto mb-4" />
-              <div class="text-center">
-                <h4 class="ek yj go kk wm xb">Millet Software Integration</h4>
-                <p class="ek ik xj _p kc fb">
-                  We provided Millet Software utilities to streamline reporting and enhance business processes.
-                </p>
-                <div class="tc yf vf flex justify-center items-center space-x-1 mb-4">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                </div>
-                <p class="ek ik xj kc fb italic">"Millet Software integration saved us significant time on reporting."</p>
-                <a href="#" class="text-blue-600 hover:underline">Learn More</a>
-              </div>
-            </div>
-
-            <!-- Client Project 4 -->
-            <div class="rotate-in client-card sg vk xm bi qj p-6 rounded-lg" style="transition-delay: 0.6s;">
-              <img src="images/sms.jpg" alt="School Management Software" class="client-image mx-auto mb-4" />
-              <div class="text-center">
-                <h4 class="ek yj go kk wm xb">School Management Software</h4>
-                <p class="ek ik xj _p kc fb">
-                  We developed a comprehensive school management software for Private School, streamlining administration and enhancing student management.
-                </p>
-                <div class="tc yf vf flex justify-center items-center space-x-1 mb-4">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                  <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.287 3.971c.3.921-.755 1.688-1.539 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.783.57-1.838-.197-1.539-1.118l1.287-3.971a1 1 0 00-.364-1.118L2.37 8.397c-.783-.57-.381-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.97z"></path>
-                  </svg>
-                </div>
-                <p class="ek ik xj kc fb italic">"The software transformed our administrative efficiency."</p>
-                <a href="#" class="text-blue-600 hover:underline">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Client Projects End ===== -->
+      <!-- ===== Products Overview End ===== -->
 
       <!-- ===== Contact Start ===== -->
       <section id="contact" class="i pg fh rm ji gp uq">
@@ -603,8 +583,8 @@
                 <h4 class="kk wm tj ec">Quick Links</h4>
                 <ul>
                   <li><a href="index.html" class="sc xl vb">Home</a></li>
-                  <li><a href="#" class="sc xl vb">Services</a></li>
                   <li><a href="products.html" class="sc xl vb">Products</a></li>
+                  <li><a href="services.html" class="sc xl vb">Services</a></li>
                   <li><a href="#" class="sc xl vb">Pricing</a></li>
                 </ul>
               </div>
@@ -612,10 +592,10 @@
               <div class="fade-up" style="transition-delay: 0.2s;">
                 <h4 class="kk wm tj ec">Services</h4>
                 <ul>
-                  <li><a href="#" class="sc xl vb">AI Development</a></li>
-                  <li><a href="#" class="sc xl vb">Web Solutions</a></li>
-                  <li><a href="#" class="sc xl vb">UI/UX Design</a></li>
-                  <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
+                  <li><a href="services.html" class="sc xl vb">AI Development</a></li>
+                  <li><a href="services.html" class="sc xl vb">Web Solutions</a></li>
+                  <li><a href="services.html" class="sc xl vb">UI/UX Design</a></li>
+                  <li><a href="services.html" class="sc xl vb">Digital Marketing</a></li>
                 </ul>
               </div>
 
@@ -725,6 +705,24 @@
           }
 
           const mailtoLink = `mailto:contact.rapidai@gmail.com?subject=${encodeURIComponent(subject)}&body=Full Name: ${encodeURIComponent(fullname)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+          window.location.href = mailtoLink;
+        });
+
+        // MediBill Enquiry Form Submission
+        document.getElementById('medibillEnquiryForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const enquiryName = document.getElementById('enquiryName').value;
+          const shopName = document.getElementById('shopName').value;
+          const location = document.getElementById('location').value;
+          const whatsappNumber = document.getElementById('whatsappNumber').value;
+          const billingPoints = document.getElementById('billingPoints').value;
+
+          if (!enquiryName || !shopName || !location || !whatsappNumber || !billingPoints) {
+            alert('Please fill out all required fields before submitting.');
+            return;
+          }
+
+          const mailtoLink = `mailto:contact.rapidai@gmail.com?subject=MediBill Enquiry&body=Name: ${encodeURIComponent(enquiryName)}%0AShop Name: ${encodeURIComponent(shopName)}%0ALocation: ${encodeURIComponent(location)}%0AWhatsApp Number: ${encodeURIComponent(whatsappNumber)}%0ANumber of Billing Points: ${encodeURIComponent(billingPoints)}`;
           window.location.href = mailtoLink;
         });
       });
