@@ -110,6 +110,13 @@
         gap: 20px;
         padding: 20px;
       }
+      @media (max-width: 768px) {
+        .service-item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
       .service-text {
         flex: 1;
       }
@@ -217,7 +224,7 @@
                   <a href="#contact" class="ek jk lk gh gi hi rg ml il vc _d _l">Start Your Journey</a>
                 </div>
               </div>
-              <img src="images/service-page.jpg" alt="Expert Services" style="width: 50%; height: auto;" />
+              <img src="images/service-page.jpg" alt="Expert Services" class="hidden md:block" style="width: 50%; height: auto;" />
 
             </div>
           </div>
