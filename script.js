@@ -5,31 +5,40 @@ let autoSlideInterval;
 // Function to move the slide for small screens
 function moveSlide() {
   const slides = document.querySelectorAll('.carousel-slide');
-  index = (index + 1) % slides.length; // Increment index in a loop
-  track.style.transform = `translateX(-${index * 100}%)`; // Move to the next slide
+  if (slides.length > 0) {
+    index = (index + 1) % slides.length; // Increment index in a loop
+    track.style.transform = `translateX(-${index * 100}%)`; // Move to the next slide
+  }
 }
 
 // Initialize the carousel based on the screen size
 function initCarousel() {
   const isSmallScreen = window.innerWidth <= 767;
   const currentTransform = track.style.transform;
+  const slides = document.querySelectorAll('.carousel-slide');
 
-  if (isSmallScreen) {
-    // Enable sliding functionality for small screens
-    if (!autoSlideInterval) {
-      track.style.transition = 'transform 0.5s ease-in-out'; // Smooth slide transition
-      autoSlideInterval = setInterval(moveSlide, 3000); // Slide every 3 seconds
-    }
-  } else {
-    // Display all slides statically for large screens
-    if (autoSlideInterval) {
-      clearInterval(autoSlideInterval); // Stop auto-sliding
-      autoSlideInterval = null; // Reset the interval
-    }
-    // Reset transform if it isn't already in default
-    if (currentTransform !== 'translateX(0)') {
-      track.style.transition = 'none'; // Remove any animation
-      track.style.transform = 'translateX(0)'; // Show all slides without transition
+  if (slides.length > 0) {
+    if (isSmallScreen) {
+      // Enable sliding functionality for small screens
+      if (!autoSlideInterval) {
+        track.style.transition = 'transform 0.5s ease-in-out'; // Smooth slide transition
+        autoSlideInterval = setInterval(moveSlide, 3000); // Slide every 3 seconds
+      }
+    } else {
+      // Display all slides statically for large screens
+      if (autoSlideInterval) {
+        clearInterval(autoSlideInterval); // Stop auto-sliding
+        autoSlideInterval = null; // Reset the interval
+      }
+      // Reset transform if it isn't already in default
+      if (currentTransform !== 'translateX(0)') {
+        track.style.transition = 'none'; // Remove any animation
+        track.style.transform = 'translateX(0)'; // Show all slides without transition
+      }
+      // Set width for each slide to accommodate 5 teammates
+      slides.forEach((slide, i) => {
+        slide.style.width = `${100 / slides.length}%`; // 20% each for 5 slides
+      });
     }
   }
 }
